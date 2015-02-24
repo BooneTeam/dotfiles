@@ -13,12 +13,24 @@ then
 fi
 
 # Install homebrew packages
+brew tap homebrew/dupes
 brew install grc coreutils spark
 brew install openssl
 brew install wget
-brew install redis
 brew install mysql
 brew install postgresql
+brew install git
+brew install git-extras
+brew install bash-completion
+brew install autoconf automake apple-gcc42
+brew install ghostscript
+brew install imagemagick
+brew install mutt
+brew install node
+brew install redis
+brew install mongodb
+brew install qt
+brew install bfg
 #Install Cask
 brew install caskroom/cask/brew-cask
 
@@ -34,7 +46,8 @@ brew cask install vagrant
 
 brew cask install rubymine
 brew cask install phpstorm
+brew cask install webstorm
 brew cask install sequel-pro
-brew cask install iterm2 
+brew cask install iterm2
 
 exit 0
