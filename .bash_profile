@@ -49,6 +49,13 @@ alias gl='git pull'
 alias gp='git push'
 
 
+# configure git
+git config --global color.ui true
+git config --global core.editor subl
+git config --global color.branch auto
+git config --global color.diff auto
+git config --global color.status auto
+
 # PROMPT
   function parse_git_branch {
     branch=`git rev-parse --abbrev-ref HEAD 2>/dev/null`
