@@ -50,4 +50,5 @@ brew cask install webstorm
 brew cask install sequel-pro
 brew cask install iterm2
 brew cask install mou
+brew cask install slack
 exit 0
