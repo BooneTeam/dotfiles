@@ -49,5 +49,5 @@ brew cask install phpstorm
 brew cask install webstorm
 brew cask install sequel-pro
 brew cask install iterm2
-brew-cask install mou
+brew cask install mou
 exit 0
