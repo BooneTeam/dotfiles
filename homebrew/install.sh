@@ -31,6 +31,7 @@ brew install redis
 brew install mongodb
 brew install qt
 brew install bfg
+brew install rbenv
 #Install Cask
 brew install caskroom/cask/brew-cask
 

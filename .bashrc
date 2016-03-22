@@ -12,7 +12,7 @@ PS1='\[\033[32m\]\u@\h\[\033[00m\]:\[\033[36m\]\w\[\033[31m\]$(__git_ps1)\[\033[
 #############################################
 export CLICOLOR=1
 export LSCOLORS=DxGxcxdxCxegedabagacad
-## git
+## GIT ALIASES 
 alias g='git status'
 alias gg='git log'
 alias gst='git status'
@@ -28,7 +28,7 @@ alias gl='git pull'
 alias gp='git push'
 
 #############################################
-# ALIASES
+# CD ALIASES
 #############################################
 alias ls='ls -a'
 alias ll='ls -l'
@@ -38,6 +38,16 @@ alias    ...="cd ../.."
 alias   ....="cd ../../.."
 alias  .....="cd ../../../.."
 alias ......="cd ../../../../.."
+
+# START AND STOP THINGS ALIASES #
+#################################
+alias startpg='pg_ctl -D /usr/local/var/postgres -l /usr/local/var/postgres/server.log start'
+alias stoppg='pg_ctl -D /usr/local/var/postgres -l /usr/local/var/postgres/server.log stop'
+
+
+# Commands For Le Terminal Things
+################################
+alias br='. ~/.bashrc'
 
 # override cd b/c I always want to list dirs after I cd
 # note that this won't work with rvm b/c it overrides cd.
