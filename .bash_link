@@ -1,3 +1,6 @@
+#### This file should be linked to a file in your Dotfiles so that
+#### when this changes you can update your repo without mv or cp or whatever
+
 #############################################
 # GIT completions & highlighted prompt
 #############################################
