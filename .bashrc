@@ -1,3 +1,6 @@
+#### This file should be linked to a file in your Dotfiles so that
+#### when this changes you can update your repo without mv or cp or whatever
+
 #############################################
 # GIT completions & highlighted prompt
 #############################################
@@ -54,6 +57,11 @@ alias stoppg='pg_ctl -D /usr/local/var/postgres -l /usr/local/var/postgres/serve
 ################################
 alias br='. ~/.bashrc'
 
+### Application alias type things#####
+
+#open Mou md editor ie: mou <filename>
+alias mou="open /opt/homebrew-cask/Caskroom/mou/0.8.7/Mou.app"
+
 # override cd b/c I always want to list dirs after I cd
 # note that this won't work with rvm b/c it overrides cd.
 cd() {
@@ -78,3 +86,6 @@ export PATH=/usr/local/mysql/bin:/usr/local/share/npm/bin:$PATH
 eval "$(rbenv init -)"
 
 
+
+export NVM_DIR="/Users/garrettboone/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
