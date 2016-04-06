@@ -76,6 +76,9 @@ git config --global color.branch auto
 git config --global color.diff auto
 git config --global color.status auto
 
+# Set a global gitignore for things like .idea and .DS_Store
+git config --global core.excludesfile '~/.dotfiles/.global_gitignore'
+
 #############################################
 # update path for mysql and pear
 #############################################
