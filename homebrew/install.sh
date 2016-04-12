@@ -52,4 +52,5 @@ brew cask install sequel-pro
 brew cask install iterm2
 brew cask install mou
 brew cask install slack
+brew cask install dropbox
 exit 0

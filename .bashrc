@@ -82,7 +82,7 @@ git config --global core.excludesfile '~/.dotfiles/.global_gitignore'
 #############################################
 # update path for mysql and pear
 #############################################
-export PATH=/usr/local/mysql/bin:/usr/local/share/npm/bin:$PATH
+export PATH=/usr/local/bin:/usr/local/mysql/bin:/usr/local/share/npm/bin:$PATH
 
 ### RBENV
 
