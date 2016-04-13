@@ -53,4 +53,5 @@ brew cask install iterm2
 brew cask install mou
 brew cask install slack
 brew cask install dropbox
+brew cask install google-hangouts
 exit 0
