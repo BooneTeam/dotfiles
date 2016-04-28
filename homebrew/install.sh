@@ -49,9 +49,11 @@ brew cask install rubymine
 brew cask install phpstorm
 brew cask install webstorm
 brew cask install sequel-pro
+brew cask install robomongo
 brew cask install iterm2
 brew cask install mou
 brew cask install slack
 brew cask install dropbox
 brew cask install google-hangouts
+brew cask install rescuetime
 exit 0
