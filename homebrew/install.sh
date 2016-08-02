@@ -56,4 +56,5 @@ brew cask install slack
 brew cask install dropbox
 brew cask install google-hangouts
 brew cask install rescuetime
+brew cask install postman
 exit 0

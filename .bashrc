@@ -34,7 +34,7 @@ alias gd='git diff | bbedit'
 alias gdm='git diff master'
 alias gl='git pull'
 alias gp='git push'
-
+alias gdf='git diff --stat' # show only file names. Must Add branch to compare as first arg.
 #############################################
 # CD ALIASES
 #############################################
