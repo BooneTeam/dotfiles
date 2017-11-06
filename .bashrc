@@ -1,5 +1,6 @@
 #### This file should be linked to a file in your Dotfiles so that
 #### when this changes you can update your repo without mv or cp or whatever
+###
 
 #############################################
 # GIT completions & highlighted prompt
@@ -8,18 +9,29 @@ if [ -f `brew --prefix`/etc/bash_completion ]; then
  . `brew --prefix`/etc/bash_completion
 fi
 GIT_PS1_SHOWDIRTYSTATE=true
-PS1='\[\033[32m\]\u@\h\[\033[00m\]:\[\033[36m\]\w\[\033[31m\]$(__git_ps1)\[\033[00m\]\$ '
+#PS1="\n\[\e[30;1m\]\[\016\]l\[\017\](\[\e[34;1m\]\u@\h\[\e[30;1m\])-(\[\e[34;1m\]\j\[\e[30;1m\])-(\[\e[34;1m\]\@ \d\[\e[30;1m\])->\[\e[30;1m\]\n\[\016\]m\[\017\]-(\[\[\e[32;1m\]\w\[\e[30;1m\])-(\[\e[32;1m\]\$(/bin/ls -1 | /usr/bin/wc -l | /bin/sed 's: ::g') files, \$(/bin/ls -lah | /bin/grep -m 1 total | /bin/sed 's/total //')b\[\e[30;1m\])--> \[\e[0m\]"
+
+PS1='\[\033[95m\][\D{%T}] \[\033[32m\]\u@\h\[\033[00m\]->\n\[\033[36m\]\w\[\033[31m\]$(__git_ps1)\[\033[00m\] \$ '
 
 ###############################
 #Iterm CWD as Tab Titles
 ###############################
 export PROMPT_COMMAND='echo -ne "\033]0;${PWD/#$HOME/~}\007"'
 
+export HOMEBREW_CASK_OPTS='--caskroom=/opt/homebrew-cask/Caskroom'
 #############################################
 # Bash ls colors
 #############################################
 export CLICOLOR=1
 export LSCOLORS=DxGxcxdxCxegedabagacad
+
+#############################################
+#RSPEC COLOR
+#######################
+alias rspec='rspec --colour'
+
+
+
 ## GIT ALIASES 
 alias g='git status'
 alias gg='git log'
@@ -41,6 +53,7 @@ alias gdf='git diff --stat' # show only file names. Must Add branch to compare a
 alias ls='ls -a'
 alias ll='ls -l'
 alias la='ls -la'
+alias sized='du -sh *'
 alias     ..="cd .."
 alias    ...="cd ../.."
 alias   ....="cd ../../.."
@@ -88,7 +101,11 @@ export PATH=/usr/local/bin:/usr/local/mysql/bin:/usr/local/share/npm/bin:$PATH
 
 eval "$(rbenv init -)"
 
+#### STOP SPRING. ALWAYS F'ing Up Rails stuff. 
+export DISABLE_SPRING=true
 
+### PATH FOR GO WORKSPACES ####
+export GOPATH=$HOME
 
 export NVM_DIR="/Users/garrettboone/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
