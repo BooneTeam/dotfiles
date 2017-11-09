@@ -80,6 +80,11 @@ alias mou="open /opt/homebrew-cask/Caskroom/mou/0.8.7/Mou.app"
 cd() {
   builtin cd "$@"
   ls
+  if [[ -f .nvmrc && -r .nvmrc ]]; then
+	      nvm use
+	        elif [[ `nvm current` != `nvm version default` ]]; then
+			    nvm use default
+			      fi
 }
 
 # configure git

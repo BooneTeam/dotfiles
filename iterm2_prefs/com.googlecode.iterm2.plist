@@ -237,13 +237,13 @@
 	<key>NSWindow Frame SUStatusFrame</key>
 	<string>708 545 400 129 0 0 1680 1027 </string>
 	<key>NSWindow Frame SUUpdateAlert</key>
-	<string>530 490 620 392 0 0 1680 1027 </string>
+	<string>530 493 620 392 0 0 1680 1028 </string>
 	<key>NSWindow Frame SessionsPreferences</key>
 	<string>269 153 606 469 0 0 1680 1027 </string>
 	<key>NSWindow Frame SharedPreferences</key>
 	<string>0 190 796 473 0 0 1680 1027 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>1085 93 572 453 0 0 1680 1027 </string>
+	<string>1074 300 572 476 0 0 1680 1028 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
 	<string>593 414 521 315 0 0 1280 777 </string>
 	<key>New Bookmarks</key>
@@ -1044,13 +1044,11 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2017-10-12T18:50:55Z</date>
-	<key>SUSkippedVersion</key>
-	<string>3.1.4.beta.1</string>
+	<date>2017-11-05T01:15:17Z</date>
 	<key>SavePasteHistory</key>
 	<false/>
 	<key>Secure Input</key>
-	<false/>
+	<true/>
 	<key>ShowBookmarkName</key>
 	<true/>
 	<key>ShowPaneTitles</key>
@@ -1073,7 +1071,6 @@
 	<integer>10</integer>
 	<key>ToolbeltTools</key>
 	<array>
-		<string>Profiles</string>
 		<string>Jobs</string>
 	</array>
 	<key>TripleClickSelectsFullWrappedLines</key>
