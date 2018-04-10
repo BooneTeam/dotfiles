@@ -47,6 +47,8 @@ alias gdm='git diff master'
 alias gl='git pull'
 alias gp='git push'
 alias gdf='git diff --stat' # show only file names. Must Add branch to compare as first arg.
+alias ls_merged='git branch --merged | egrep -v "(^\*|master|dev|staging)"'
+alias rm_merged='git branch --merged | egrep -v "(^\*|master|dev|staging)" | xargs git push --delete origin'
 #############################################
 # CD ALIASES
 #############################################
@@ -102,6 +104,8 @@ git config --global core.excludesfile '~/.dotfiles/.global_gitignore'
 #############################################
 export PATH=/usr/local/bin:/usr/local/mysql/bin:/usr/local/share/npm/bin:$PATH
 
+export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0_151.jdk/Contents/Home
+
 ### RBENV
 
 eval "$(rbenv init -)"
@@ -110,7 +114,11 @@ eval "$(rbenv init -)"
 export DISABLE_SPRING=true
 
 ### PATH FOR GO WORKSPACES ####
-export GOPATH=$HOME
+export GOPATH="$HOME/go_projects"
 
 export NVM_DIR="/Users/garrettboone/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
+
+# Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
+# $HOME/.rvm/bin
+export PATH="$PATH:/usr/local/sbin"
